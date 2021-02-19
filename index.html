@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro-HiT Virkud | Portfolio by @rohit_virkud</title>
+    <meta name="author" content="rohit @rohit_virkud">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    
+
+
+    <!-- panzoom -->
+    <script src="https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="my-grid">
+           
+            <div class="navbar">
+                <div class="navbar-links">
+                <a href="#">Portfolio</a>
+                <a href="#" class="mg-lft-3em">About</a>
+                </div>
+                 
+                <div class="btn">
+                <a href="#" class="primary-outline-btn"> Email Me</a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-section">
+
+                <h1>Hi, I'm Rohit Virkud.</h1>
+                <p>I'm a Web Designer & creative developer working with startups to create great products & brands.</p>
+                
+                <a href="#" class="primary-outline-btn"> See My Work Below</a>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- draggable content -->
+   
+     <div class="container-drag">
+           
+            <div class="row">
+                <div class="block block-1" onclick="alert('hi')"></div>
+                <div class="block block-2"></div>
+                <div class="block block-3"></div>
+                <div class="block block-4 none"></div>
+                <div class="block block-5 none"></div>
+                <div class="block block-6 none"></div>
+            </div>
+            <div class="row">
+                <div class="block block-5 none"></div>
+                <div class="block block-6"></div>
+                <div class="block block-7"></div>
+                <div class="block block-8"></div>
+                <div class="block block-1 none"></div>
+                <div class="block block-2 none"></div>
+            </div>
+            <div class="row">
+                <div class="block block-1 none"></div>
+                <div class="block block-2 none"></div>
+                <div class="block block-3 none"></div>
+                <div class="block block-4"></div>
+                <div class="block block-5"></div>
+                <div class="block block-6"></div>
+            </div>
+            <div class="row">
+                <div class="block block-5 none"></div>
+                <div class="block block-6 "></div>
+                <div class="block block-7 none"></div>
+                <div class="block block-8"></div>
+                <div class="block block-1 none"></div>
+                <div class="block block-2"></div>
+            </div>
+        </div>
+
+   <!-- -->   
+
+   
+
+
+    <!-- script -->
+    <script type="text/javascript">
+        
+          /*draggable*/
+            var element = document.querySelector(".container-drag");
+
+            panzoom(element, {
+                minZoom: 1,
+                maxZoom: 1
+            });
+          /**/
+
+        </script>
+    </script>
+</body>
+
+</html>

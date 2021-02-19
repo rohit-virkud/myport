@@ -1,0 +1,282 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+a{
+	border: none;
+	color: white;
+	text-decoration: none;
+	
+}
+body
+{
+	background: black;
+	color: white;
+	/*overflow-x: hidden;  Hide horizontal scrollbar */
+    overflow: hidden;
+}
+img
+{
+	width: 100%;
+}
+.container
+{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.my-grid
+{
+	width: 80%;
+	min-height: 100vh;
+	/*background: #1D1D1D;*/
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.navbar
+{
+	width: 100%;
+	height: 10vh;
+	font-size: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar-links .mg-lft-3em
+{
+  margin-left: 3em;
+}
+.primary-outline-btn
+{
+ 
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+}
+
+
+/*  hero section */
+.hero-section
+{
+  
+   width: 100%;
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  /* background: white; */
+   
+}
+.hero-section h1
+{
+    font-size: 6em;
+    text-align: center;
+
+}
+.hero-section p
+{
+    font-size: 2em;
+    width: 90%;
+    text-align: center;
+    font-weight: 300px;
+}
+.hero-section .primary-outline-btn
+{
+    margin-top: 2em;
+}
+
+
+
+
+
+/* image hover effect */
+
+
+.img {
+    width: 500px;
+    height: 500px;
+    perspective: 300px;
+}
+
+.img-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
+}
+
+.img-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.img-holder {
+    transform: scale(1.4);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**/
+
+
+
+
+/*draggable content*/
+
+.container-drag {
+    position: absolute;
+    width: 200%;
+    height: 200vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 4em 0;
+}
+
+.block {
+    width: 400px;
+    height: 500px;
+    background: grey;
+    margin: 1em;
+    filter: grayscale(1);
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.block:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.block-1 {
+    background: url("img/one.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-2 {
+    background: url("img/two.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-3 {
+    background: url("img/three.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4 {
+    background: url("img/four.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-5 {
+    background: url("img/five.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-6 {
+    background: url("img/six.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-7 {
+    background: url("img/seven.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-8 {
+    background: url("img/eight.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+ 
+
+/**/
+@media(max-width: 900px) 
+{
+ 
+    .none
+    {
+        display: none;
+    }
+	.my-grid
+	{
+		width: 95%;
+		min-height: 100vh;
+	/*	background: #1D1D1D;*/
+		padding-top: 10%;
+	    padding-bottom: 10%;
+	}
+
+	.hero-section h1
+    {
+        font-size: 3em;
+
+        
+    }
+    .hero-section p
+    {
+        font-size: 1em;
+        width: 90%;
+        text-align: center;
+        font-weight: 300px;
+    }
+
+
+
+	.block-1 {
+    background: url("img/one.jpg") no-repeat 50% 50%;
+    background-size: cover;
+     }
+
+.block-2 {
+    background: url("img/two.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    }
+
+.block-3 {
+    background: url("img/three.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4 {
+    background: url("img/four.jpg") no-repeat;
+    background-size: cover;
+}
+
+.block-5 {
+    background: url("img/five.jpg") no-repeat;
+    background-size: cover;
+}
+
+.block-6 {
+    background: url("img/six.jpg") no-repeat;
+    background-size: cover;
+}
+
+.block-7 {
+    background: url("img/seven.jpg") no-repeat;
+    background-size: cover;
+}
+
+.block-8 {
+    background: url("img/eight.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+
+}
