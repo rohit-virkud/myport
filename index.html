@@ -99,14 +99,32 @@
     <!-- script -->
     <script type="text/javascript">
         
-          /*draggable*/
+          /*draggable
             var element = document.querySelector(".container-drag");
 
             panzoom(element, {
                 minZoom: 1,
                 maxZoom: 1
             });
-          /**/
+          */
+        
+        var $panzoom = $("#element").panzoom({
+            which: -1,
+            minZoom: 1,
+            maxZoom: 1
+           // other settings
+        });
+        // Add onetime event listener, that just changes "which" if a mouse is detected
+        window.addEventListener('mousemove', function() {
+            $("#element").panzoom("option", "which", 1);
+        }, {once: true});
+        /* 
+        // Other way around; but this requires on simple touch before doing any pinching 
+        // This "might" be the better solution a problem with Win8/10 and touchscreens?
+        window.addEventListener('touchstart', function() {
+            $("#element").panzoom("option", "which", -1);
+        }, {once: true});
+        */
 
         </script>
     </script>
